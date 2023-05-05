@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CHAT-BOT</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="./main.js"></script>
+</head>
+
+<body>
+	<div class="w-full h-screen">
+		<div class="min-w-full min-h-full border rounded lg:grid lg:grid-cols-3">
+			<div class="border-r border-gray-300 lg:col-span-1">
+				<ul class="overflow-auto h-[32rem]">
+					<h2 class="my-2 mb-2 ml-2 text-lg text-gray-600">Chats</h2>
+					<li id="bots">
+					</li>
+				</ul>
+			</div>
+			<div class="hidden lg:col-span-2 lg:block">
+				<div class="w-full">
+					<div class="relative flex items-center p-3 border-b border-gray-300">
+						<span class="block ml-2 font-bold text-gray-600">Les bots</span>
+						</span>
+					</div>
+					<div class="relative w-full p-6 overflow-y-auto h-[50.5rem]" id="chat">
+					</div>
+					<div class="flex items-center justify-between w-full p-3 border-t border-gray-300">
+						<input type="text" placeholder="Message" id="message"
+							class="block w-full py-2 pl-4 mx-3 bg-gray-100 rounded-full outline-none focus:text-gray-700"
+							name="message" required />
+						<button type="button" id="send">
+							<svg class="w-5 h-5 text-gray-500 origin-center transform rotate-90"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+								<path
+									d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
